@@ -33,9 +33,10 @@ include("convolution.jl")
 include("testsuite/testsuite.jl")
 include("jlbackend.jl")
 include("random.jl")
+include("repeat.jl")
 
 export GPUArray, gpu_call, thread_blocks_heuristic, global_size, synchronize_threads
-export linear_index, @linearidx, @cartesianidx, convolution!, device, synchronize
+export linear_index, @linearidx, @cartesianidx, convolution!, device, synchronize, gpu_repeat, gpu_repeat_grad
 export JLArray
 
 end # module
